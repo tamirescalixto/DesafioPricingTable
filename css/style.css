@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    background: linear-gradient(
+        to top,
+        var(--white) 0%,
+        var(--white) 50%,
+        var(--blue) 50%,
+        var(--blue) 100%
+    );
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainText {
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: var(--page-background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mainText h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 100px 0 20px 0;
+    text-align: center;
+}
+
+.mainText h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 65px 0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+.basicoBox {
+    display: flex;
+    width: 355px;
+    height: 76px;
+    background: var(--yellow);
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px 8px 0px 0px;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.cardBox {
+    background: var(--white);
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    width: 355px;
+    height: 470px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cardBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.textBox {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--blue);
+}
+
+.spacingBox {
+    padding: 0 30px 0 30px;
+}
+
+.cardBoxbasico {
+    background: var(--white);
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    width: 355px;
+    height: 490px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} 
+
+.basicoBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btnBoxBasico {
+    width: 94px;
+    height: 32px;
+    background: #1D539E;
+    border-radius: 40px;
+    border: none;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    position: absolute;
+    margin-left: 203px;
+}
+
+.btnBoxBasico:hover {
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid #1D539E;
+    transition: all 0.1s ease-in;
+}
+
+.priceBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline; 
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: #1E2338;
+}
+
+.btnBox {
+    position: absolute;
+    margin-top: 350px;
+}
+
+.priceLg {
+    font-size: 36px;
+}
+
+.priceSm {
+    font-size: 18px;
+}
+
+.priceMonth {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    color: #828799;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #828799;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+
+.descriptionBasico {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #828799;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+
+.checkList li {
+    list-style: none;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    color: #828799;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 15px;
+    padding: 20px 0 0 0;
+}
+
+.btnActionBox {
+    border: 1px solid #1D539E;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 296px;
+    height: 49px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D539E;
+    cursor: pointer;
+}
+
+.btnActionBoxBasico {
+    border: none;
+    background-color: var(--blue);
+    border-radius: 10px;
+    width: 296px;
+    height: 49px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+    position: absolute;
+    margin-top: 69px;
+}
+
+.btnActionBoxBasico:hover {
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid #1D539E;
+    transition: all 0.1s ease-in;
+}
+
+.btnActionBox:hover {
+    background: var(--blue);
+    color: var(--white);
+    transition: all 0.1s ease-in;
+} 
+
+@media (max-width: 1100px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        background: var(--blue);
+    }
+
+    .mainText h1 {
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .mainText h2 {
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
